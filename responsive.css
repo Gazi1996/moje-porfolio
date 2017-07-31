@@ -1,0 +1,163 @@
+@media all and (max-width: 1200px)
+{
+    .portfolio-item
+    {
+        width: 50%;
+    }
+    
+    .portfolio-item:last-child
+    {
+        width: 100%;
+    }
+    
+     #nextnews
+    {   
+        background-color: red; 
+        margin-left: 30%;
+        width: 60%;
+        box-sizing: border-box;
+        float: left;
+        margin-top: 40px;
+    }
+       
+}
+@media all and (max-width: 1000px)
+{
+    #nav .toggle
+    {
+        display:block;
+        background-color: #ffffff;
+        padding: 0 20px;
+        color: black;
+        font-size: 20px;
+        line-height: 60p;
+        text-decoration: none;
+        border: none;
+        text-align: right;   
+    }
+    
+    #nav ul
+    {
+        display: none;
+    }
+    
+    #nav #drop:checked + ul
+    {
+        display: block;  
+    }
+    
+    #nav > ul > li
+    {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;     
+    }
+    
+    #o-mnie
+    {
+        height: 700px;
+        box-sizing: border-box;
+        padding: 10px 40px;
+    }
+    
+    #o-mnie > figure
+    {
+        width: 100%;
+    }
+    
+    #o-mnie > #info
+    {
+        margin-top:30px;
+        width: 100%;
+    }
+    
+    #portfolio #portfolio-items .porfolio-item
+    {
+        width: 100%;
+    }
+    
+    #contact #contact_info, #contact #contact_info h3
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #contact #contact_info address
+    {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    #social
+    {
+        margin:0;
+        padding: 0;
+    }
+    
+    #form
+    {
+        width: 100%;
+        margin:0px;
+        padding: 0px;
+    }
+    
+    input,textarea
+    {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: auto;
+    }
+    
+    #submit
+    {
+        width: 14%;
+        margin-left: 62%;
+        margin-top: 10px;
+        padding:0;
+    }
+    
+    
+    
+    
+}
+
+@media all and (max-width: 680px)
+{
+    
+    #header .inner h1
+    {
+        font-size: 3rem;
+    }
+    
+    #header .inner h2
+    {
+        font-size: 2rem;
+    }
+    
+    #o-mnie #figure
+    {
+        text-align: center;
+        width: 80vw;
+        margin-bottom: 0px;
+    }
+    
+    #o-mnie #figure img
+    {
+        width: 60%;
+        margin-bottom: 0px;
+    }
+    
+    #o-mnie #info
+    {
+        margin:0px;
+        padding-top: 0px;
+    }
+    
+    
+    
+    
+    
+        
+}

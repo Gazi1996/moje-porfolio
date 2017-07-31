@@ -1,0 +1,23 @@
+body
+{
+    margin: 0;
+}
+
+main-nav
+{
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+}
+
+#main-nav ul li
+{
+    display: inline-block;
+    margin-right: 
+    padding: 10px 0;
+}
+
+#main-nav ul li a
+{
+    color:
+}

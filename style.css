@@ -1,0 +1,486 @@
+/*reset*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    color: #291f1a;
+    font-family: 'Lato', sans-serif;
+    font-size:0;
+}
+
+#header
+{
+    background-image: url("img/header-background.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size:100% 100%; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header .inner
+{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.inner>h1
+{
+    text-align: center;
+}
+
+/*
+#logo
+{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+}
+*/
+
+/*
+    Drugi sposób:
+    #header
+    {
+        background-image: url("img/header-background.jpg");
+        width: 100%;
+        height: 600px;
+        background-size:100% 100%; 
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    #div-z-naglowkami: h1,h2
+    {
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+    }
+
+*/
+
+#nav
+{
+    position: fixed;
+	top: 0;
+    background-color: grey;
+    width: 100%;
+    z-index: 1;   
+    opacity:0.7;
+}
+
+#nav .toggle,[id="drop"]
+{
+    display: none;
+}
+
+#nav ul
+{
+    text-align: right;
+    margin-right: 50px;
+}
+
+#nav ul li 
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+#nav ul li>a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#nav ul li>a:hover
+{
+    color: #1ac056;
+}
+
+h1
+{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 180px;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 200;
+}
+
+strong
+{
+    color: #1ac056;
+}
+
+h2
+{
+    text-align: center;
+    color: lightgray;
+    font-size: 25px;
+}
+
+#o-mnie
+{
+    background-color: #d8fcfe; 
+    height: 500px;
+}
+
+h3
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight:100;
+    /* Pytanie o font-weight   */
+}
+
+h3 strong
+{
+    font-size: 30px;
+    font-weight: 100; 
+    /* Pytanie o font-weight   */
+}
+
+#figure
+{
+    margin-top: 20px;
+    width: 50%;
+    height: 300px;
+    float: left;
+    text-align: center; 
+}
+
+#figure img
+{
+    width: 50%;
+}
+
+#info
+{
+    width: 50%;
+    height: 300px;
+    float: left;
+    text-align: justify;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding-right: 2%;
+    margin-top: 20px;
+}
+
+#umiejetnosci
+{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#umiejetnosci p
+{
+    padding: 10px 8% 5px 8%;
+    text-align: center;
+    font-size: 18px;
+}
+
+#portfolio
+{
+    margin-top: 80px;
+    margin-bottom: 90px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner
+{
+    margin: 45px 0;
+    text-align: center;
+}
+
+.icon
+{
+    text-align: center;
+    display: inline-block;
+    margin: 3%;
+}
+
+.icon img
+{   
+    width: 100%;
+    display: inline-block;    
+}
+
+figcaption
+{
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+    color: grey;
+}
+
+#portfolio
+{
+    text-align: center;
+    width:90%;
+}
+
+#portfolio-items
+{
+    font-size: 0;
+}
+
+.portfolio-item
+{
+    display: inline-block;
+    width: 33.3333%;
+    margin: 0;
+    height: 350px;
+    position: relative;
+}
+
+#portfolio-item-1
+{
+    background: url('img/portfolio1.jpg') no-repeat;
+    background-size: cover;
+}
+
+#portfolio-item-2
+{
+    background: url('img/portfolio2.jpg') no-repeat;
+    background-size: cover;
+}
+
+#portfolio-item-3
+{
+
+    background: url('img/portfolio3.jpg') no-repeat;
+    background-size: cover;
+}
+
+.portfolio-item-mask
+{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(42,61,79, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+.portfolio-item-mask:hover
+{
+    opacity:1;
+}
+
+.portfolio-item-mask-border
+{
+    border: 1px solid #fff;
+    height: 100%;
+    position: relative;
+}
+
+.portfolio-item-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    
+}
+
+.portfolio-item-content i:hover
+{
+    color:green;  
+}
+
+h4
+{
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    
+}
+
+.portfolio-item-content p
+{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+
+#contact
+{
+    margin-top: 40px;
+    background-color: #213b50;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+#contact_info
+{
+    width: 30%;
+    float: left;
+    
+}
+
+#address
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 30%;
+    text-align: left;
+    color: white; 
+    line-height: 25px;
+    font-style: normal;
+}
+
+#address a
+{
+    color: #1ac056;
+}
+
+#form
+{
+    width: 70%;
+    float: left;
+    padding-top: 70px;
+}
+
+input
+{
+    width: 50%;
+    margin-left: 40%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+
+textarea
+{
+    width: 50%;
+    margin-left: 40%;
+    height: 100px;
+    padding: 5px;
+}
+
+#social
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-left: 20%;
+    /*line-height*/
+    /*Zamiana kolorów*/
+}
+
+.fontello
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid white;
+    margin: 10px;
+}
+
+
+.clear
+{
+    clear:both;
+}
+
+#submit
+{
+    margin-left: 81%;
+    width: 10%;
+    height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #1ac056;
+    border: 1px solid white;
+}
+
+#fb:hover
+{
+    background: #3b5998;
+}
+
+#gplus:hover
+{
+    background-color: #d34836;
+}
+
+#twitter:hover
+{
+    background-color: #3b5998;
+}
+
+#in:hover
+{
+    background-color: #00aced;
+}
+
+#footer
+{
+    height: 30px;
+    background-color: #142634;
+    color: black;
+    padding-left: 120px;
+    font-size: 20px;
+}
+
+input, textarea
+{
+    background-color: #2b4a64;
+    color: white;
+    border: 0px;
+}
+
+input:focus, textarea:focus
+{
+    background-color: #426684;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
